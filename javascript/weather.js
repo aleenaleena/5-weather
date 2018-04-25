@@ -81,9 +81,15 @@ async function getWeather(city, key, units = 'imperial') {
       document.body.classList.add('hot');
     }
 
+    var conditionData = data.weather[0].main;
+    var pictureFrameDiv = document.getElementById("picture_of_shoes");
+    pictureFrameDiv.classList = "sneakers";
+    pictureFrameDiv.classList.add(conditionData.toLowerCase());
+
+    console.log(data);
     // Set Weather Data
     if (condition) {
-      condition.innerText = data.weather[0].main;
+      condition.innerText = conditionData;
     }
     if (conditionDescription) {
       conditionDescription.innerText = data.weather[0].description;

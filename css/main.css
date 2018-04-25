@@ -1,13 +1,43 @@
 /* ========================================
  * CSS written here will override Tachyons
  * ======================================== */
-.z{position: fixed; z-index: -10; max-width:100%;
+.z{position: fixed; z-index: -10; width: auto;
   height:auto;}
 
   div.sneakers {
-	  background-image : url('/sneakers-sm-ecentrcq.jpeg');
-	  height : 800px;
-	  width : 800px;
+	  height : auto;
     background-repeat: no-repeat;
     z-index: -10;
+    display : inline-block;
 	}
+
+
+div.sneaker-clouds, div.sandal-warm, div.boot-rain, div.boot-clouds, div.boots-snow{
+  display: none;
+}
+
+div.clouds div.sneaker-clouds {
+  display : inline-block;
+}
+div.haze div.boot-clouds {
+  display : inline-block;
+}
+div.rain div.boot-rain {
+  display : inline-block;
+}
+div.thunderstorm div.boot-rain {
+  display : inline-block;
+}
+div.clear div.sandal-warm {
+  display : inline-block;
+}
+div.snow div.boots-snow {
+  display : inline-block;
+}
+div.mist div.boot-rain {
+  display : inline-block;
+}
+
+div.fog div.boot-clouds {
+  display : inline-block;
+}
