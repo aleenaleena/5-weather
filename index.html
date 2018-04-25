@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Set a page title -->
+  <title>Weather</title>
+
+  <!-- Site Styles -->
+  <link rel="stylesheet" href="/css/tachyons.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+  <div class="avenir">
+
+    <!-- If there is an error, this box is shown. 'dn' is the only required class -->
+    <div id="error" class="dn bg-red white pa4 fixed bottom-0 w-100">
+      Sorry, we couldn't find that city.
+    </div>
+
+    <!-- Search Box --><div class="flex-ns">
+    <div class="w-50-ns"><form id="location-search" class="pa4-ns ph4">
+      <h1 class="blue f3">
+          <span>
+Enter your city:
+        </span>
+          <input type="text" id="area" value="Boston" class="flex-auto">
+        </h1>
+    </form></div>
+  <div class="w-50-ns pt4-ns ph0-ns ph4">  <h2 class="blue">Location</h2>
+    <p><strong>City: </strong> <span id="location-name"></span></p>
+    <p><strong>Country: </strong><span id="country"></span></p></div>
+  </div>
+
+
+<!--what shoes should i wear-->
+<div class="flex ph4 w-100 green f1-l f2-m f3-s"><h1 class="pa0">What shoes should<br>I wear today?</h1></div>
+
+	<div id="picture_of_shoes" class="sneakers"><img src="/sneakers-sm-ecentrcq.jpeg">
+	</div>
+
+<!--temperature-->
+<!--high-->
+<div class="flex">
+  <div class="ph4 w-50"><h1 class="pa0 tr normal f2-ns f3">High:</h1>
+</div>
+<div class="w-50"><p class="ma0 f-headline-ns f1"><span id="temp-max"></span>℉</p></div>
+</div>
+
+<!--currently-->
+<div class="flex">
+  <div class="ph4 w-50"><h1 class="pa0 tr normal f2-ns f3">Currently:</h1>
+</div>
+<div class="w-50"><p class="ma0 f-headline-ns f1 b green"><span id="temp"> </span>℉</p></div>
+</div>
+
+<!--low-->
+<div class="flex">
+  <div class="ph4 w-50"><h1 class="pa0 tr normal f2-ns f3">Low:</h1>
+</div>
+<div class="w-50"><p class="ma0 f-headline-ns f1"><span id="temp-min"></span>℉</p></div>
+</div>
+
+
+
+
+    <!-- Content -->
+
+
+<div class="flex-ns"><div class="w-50"></div>
+      <div class="w-50 ph4">
+        <h2 class="blue">Weather Conditions</h2>
+        <p><span id="condition"></span>, <span id="condition-description"></span></p>
+        <p><strong>Wind Speed:</strong> <span id="wind-speed"></span>mph</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Site JavaScript -->
+  <script src="/javascript/toggleClass.js" charset="utf-8"></script>
+  <script src="/javascript/main.js" charset="utf-8"></script>
+  <script src="/javascript/weather.js" charset="utf-8"></script>
+</body>
+
+</html>
