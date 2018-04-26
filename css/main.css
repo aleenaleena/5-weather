@@ -24,18 +24,23 @@ div.haze div.boot-clouds {
 }
 div.rain div.boot-rain {
   display : inline-block;
+  color: green;
 }
 div.thunderstorm div.boot-rain {
   display : inline-block;
+    color: green;
 }
 div.clear div.sandal-warm {
   display : inline-block;
+  color:brown;
 }
 div.snow div.boots-snow {
   display : inline-block;
+  color: pink;
 }
 div.mist div.boot-rain {
   display : inline-block;
+    color: green;
 }
 
 div.fog div.boot-clouds {
